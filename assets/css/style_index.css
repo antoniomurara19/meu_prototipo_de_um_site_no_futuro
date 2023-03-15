@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 
 *{
     box-sizing: border-box;
@@ -17,6 +18,7 @@ h2{
     justify-content: flex-start;
     cursor: pointer;
     opacity: 0.8;
+    font-family: 'Rowdies', cursive;
 }
 
 .menu{
@@ -25,6 +27,7 @@ h2{
     justify-content: space-between;
     background-color: #0e0b05;;
     height: 9rem;
+    position: sticky;
 }
 
 .menu img{
@@ -44,7 +47,7 @@ h2{
     padding: 2.7rem;
 }
 .menu_item a{
-    padding:3rem;
+    padding:2.5rem;
     color: #f8c8ed;
     font-size: 1.3rem;
     font-weight: bold;
@@ -61,7 +64,6 @@ h2:hover{
     transform: scale(1.05);
     transition: all ease-in-out 300ms;
     opacity: 1;
-
 }
 
 .menu img:hover{
@@ -71,8 +73,63 @@ h2:hover{
 }
 
 /* ---main--- */
+.titulo{
+    background-image: url(/assets/img/land.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    opacity: 0.8;
+}
 
+.titulo:hover{
+    transition:all 300ms ease-in-out;
+    opacity: 1;
+}
 
+h1{
+    color:white;
+    font-size: 4.1rem;
+    font-family: 'Rowdies', cursive;
+    opacity: 0.8;
+    cursor: pointer;
+}
 
+/* ---parallax--- */
+.wrapper {
+    height: 2000px; 
+    overflow-x: hidden;
+    perspective: 2px;
+    transform-style: preserve-3d;
+  }
+
+  .part {
+    position: relative;
+    height: 100vh;
+    min-height: 2000px;
+    transform-style: inherit; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+  }
+
+  .part::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateZ(-1px) scale(1.5);
+    
+  }
+
+  .bg::before{
+      background-image: url(/assets/img/parallax.jpg);
+      
+  }
 
 
