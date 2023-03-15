@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fira Code', monospace;
+}
+
+h2{
+    color:#f8c8ed;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0e0b05;;
+    height: 9rem;
+}
+
+.menu img{
+    width: 8em;
+    height: 8rem;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.menu_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2.7rem;
+}
+.menu_item a{
+    padding:3rem;
+    color: #f8c8ed;
+    font-size: 1.3rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.menu_item a:hover{
+    font-size:1.6rem ;
+    transition: all ease-in-out 300ms;
+    opacity: 1;
+}
+
+h2:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 300ms;
+    opacity: 1;
+
+}
+
+.menu img:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 300ms;
+    opacity: 1;
+}
+
+/* ---main--- */
+
+
+
+
+
