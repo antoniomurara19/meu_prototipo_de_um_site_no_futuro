@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 
 *{
     box-sizing: border-box;
@@ -10,7 +9,7 @@
     font-family: 'Fira Code', monospace;
 }
 
-h2{
+header h2{
     color:#f8c8ed;
     font-size: 5rem;
     display: flex;
@@ -18,7 +17,8 @@ h2{
     justify-content: flex-start;
     cursor: pointer;
     opacity: 0.8;
-    font-family: 'Rowdies', cursive;
+    font-family: 'Fira Code', cursive;
+    letter-spacing: -0.7rem;
 }
 
 .menu{
@@ -60,7 +60,7 @@ h2{
     opacity: 1;
 }
 
-h2:hover{
+header h2:hover{
     transform: scale(1.05);
     transition: all ease-in-out 300ms;
     opacity: 1;
@@ -72,29 +72,117 @@ h2:hover{
     opacity: 1;
 }
 
-/* ---main--- */
+/* ----------------------------main--------------------- */
+
 .titulo{
-    background-image: url(/assets/img/land.jpg);
+    display: flex;
+    background: linear-gradient(89.2deg, rgb(0, 0, 0) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 1rem;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+.titulo img{
+    margin: 1rem;
+    height: 27rem;
+}
+.titulo h3{
+    margin: 3rem 1rem 1rem 1rem;
+   font-size: 2rem;
 }
 
-.titulo:hover{
+h1:hover{
     transition:all 300ms ease-in-out;
     opacity: 1;
+    transform: scale(1.01);
 }
 
 h1{
     color:white;
-    font-size: 4.1rem;
-    font-family: 'Rowdies', cursive;
-    opacity: 0.8;
+    letter-spacing: -1.1rem;
+    font-size: 7.3rem;
+    font-family: 'Fira Code', cursive;
+    opacity: 0.9;
+    margin: 0.3rem 6rem 0.03rem 1rem ;
     cursor: pointer;
+    direction: rtl;
 }
 
-/* ---parallax--- */
+.bg1{
+    display: flex;
+    background-image: url(/assets/img/marte_home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.bg1 h2{
+    color: white;
+    font-size: 4rem;
+    margin-left: 2rem;
+    letter-spacing: -0.4rem;
+    cursor: default;
+    margin: 8rem 1rem 8rem 1rem;
+}
+
+/* -----------------------carrossel------------------------ */
+.galery{
+    width:700px ;
+    height:575px;
+    margin:100px auto;
+    overflow: hidden;
+}
+
+.galery .photos{
+    display: flex;
+    width: 3680px ;
+    height: 575px;
+}
+
+.galery .photos img{
+   position: relative;
+   left: 0px;
+   animation: slide 15s ease-in-out infinite running;
+}
+
+@keyframes slide {
+    0%{
+        left:0px;
+    }
+    10%{
+        left:0px;
+    }
+    20%{
+        left:-800px;
+    }
+    30%{
+        left:-800px;
+    }
+    40%{
+        left:-1600px;
+    }
+    50%{
+        left:-1600px;
+    }
+    60%{
+        left:-2400px;
+    }
+    70%{
+        left:-2400px;
+    }
+    80%{
+        left:-3200px;
+    }
+    90%{
+        left:-3200px;
+    }
+    99.99%{
+        left:-3200px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+/* --------------------parallax------------------------- */
 .wrapper {
     height: 2000px; 
     overflow-x: hidden;
@@ -128,8 +216,7 @@ h1{
   }
 
   .bg::before{
-      background-image: url(/assets/img/parallax.jpg);
-      
+      background-image: url(/assets/img/matrix.gif); 
   }
 
 
