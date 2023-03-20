@@ -95,6 +95,7 @@ header h2:hover{
 
 .titulo{
     position: relative;
+    opacity: 0.94;
 }
 
 .titulo h1::after{
@@ -111,16 +112,20 @@ header h2:hover{
 .titulo h1:hover::after{
     width: 100%;
 }
+.titulo h1:hover{
+    color: white;
+    text-shadow: 1px 1px 3px white;
+    transition: all 450ms ease-in-out;
+}
 
 h1{
-    color:white;
+    color:#0e0b05;
     letter-spacing: -0.7rem;
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-family: 'Fira Code', cursive;
     padding: 1rem;
     cursor: pointer;
     text-align: center;
-    text-shadow: 1px 1px 3px white;
 }
 
 .bg1{
@@ -128,24 +133,30 @@ h1{
     background-image: url(/assets/img//back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.94;
+    opacity: 0.97;
 }
 
 .bg1 h2{
     color: black;
     text-shadow: 3px 3px white;
-    font-size: 5.3rem;
-    margin: 5.5rem 0 0 5.5rem;
+    font-size: 5rem;
+    margin: 5.5rem 0 0 1.5rem;
     letter-spacing: -0.6rem;
     cursor: default;
     width: 50rem;
 }
+.bg1 h2:hover{
+    color:white;
+    text-shadow: 3px 3px black;
+    font-size: 5.01rem;
+    transition: all 300ms ease-in-out;
+}
 
 .bg2{
-    background-image: url(/assets/img/intro/intro_4.jpg);
+    background-image: url(/assets/img/intro/intro_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.94;
+    opacity: 0.97;
 }
 
 .bg2 h2{
@@ -157,6 +168,11 @@ h1{
     cursor: default;
     text-align: center;
 }
+.bg2 h2:hover{
+    color: rgb(255, 111, 0);
+    font-size: 7.02rem;
+    transition: all 300ms ease-in-out;
+}
 .bg2 p{
     color: white;
     text-shadow: 2px 2px black;
@@ -166,8 +182,34 @@ h1{
     text-align: center;
     margin: 0 18rem 0 18rem;
 }
+.bg2 p:hover{
+    color: rgb(255, 111, 0);
+    text-shadow: 2px 2px black;
+    font-size: 2.02rem;
+    transition: all 300ms ease-in-out;
+}
 
-
+.bg2 a{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 2.4rem;
+    cursor: pointer;
+    margin-left: 30.6rem;
+}
+.bg2 a:hover{
+    color: blue;
+    font-size: 2.41rem;
+    font-weight: 1000;
+    transition: all 300ms ease-in-out;
+}
+/* ------------------------iframe-------------------------- */
+iframe{
+    width: 80rem;
+    height: 50rem;
+    margin-left: 7.5rem;
+    border: 3px solid white;
+    opacity: 0.85;
+}
 
 /* -----------------------carrossel------------------------ */
 
@@ -177,6 +219,7 @@ h1{
     margin:100px auto;
     overflow: hidden;
     border: 5px white solid;
+    margin-right: 3rem;
 }
 
 .galery .photos{
@@ -228,7 +271,7 @@ h1{
 }
 /* --------------------parallax------------------------- */
 .wrapper {
-    height: 2000px; 
+    height: 3000px; 
     overflow-x: hidden;
     perspective: 2px;
     transform-style: preserve-3d;
@@ -237,7 +280,7 @@ h1{
   .bg {
     position: relative;
     height: 100vh;
-    min-height: 2000px;
+    min-height: 3000px;
     transform-style: inherit; 
     overflow-y: hidden;
     overflow-x: hidden;
