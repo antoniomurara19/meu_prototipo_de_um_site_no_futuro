@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fira Code', monospace;
+}
+
+header h2{
+    color:#ffffff;
+    font-size: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    letter-spacing: -0.7rem;
+    opacity: 0.7;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0e0b05;
+    height: 9rem;
+    position: sticky;
+}
+
+.menu img{
+    width: 9em;
+    height: 9rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3rem;
+
+}
+.menu_item li a{
+    color: #f8c8ed;
+    font-size: 1.9rem;
+    opacity: 0.7;
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.menu_item a::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0.3rem;
+    top: 0;
+    left: 0;    
+    background-color: #f3f3f3;
+    transition: 600ms;
+}
+
+.menu_item li a:hover::after{
+    width: 100%;
+}
+.menu_item li a:hover{
+    opacity: 1;
+}
+
+header h2:hover{
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+}
+
+.menu img:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 300ms;
+    opacity: 1;
+}
+
+/* ----------------------------main--------------------- */
+
+
+
+  /* ---------------footer---------------------- */
+
+footer{
+    background-color:#dc2f2f;
+    width: 100%;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+.disponibilidade{
+    padding: 0.3rem;
+    text-align: start;
+}
+.antonio{
+    font-size: 1.7rem;
+}
+.contato{
+    padding: 0.3rem;
+    text-align: end;
+}
