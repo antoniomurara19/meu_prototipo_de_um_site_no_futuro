@@ -97,7 +97,7 @@ h2{
 .formulario{
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: center;  
 }
 
 label{
@@ -113,7 +113,7 @@ input{
     font-weight: 300;
     width: 12rem;
     color: white;
-    border: 2px solid white;
+    border: 3px solid white;
     background-color: transparent;
 }
 
@@ -121,8 +121,9 @@ input{
 
 fieldset{
     padding: 2rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 3.7rem 0;
     border-radius: 0.3rem;
+    border: 3px solid white;
 }
   
 legend{
@@ -142,11 +143,11 @@ legend{
     margin: 1rem 0.5rem 0.5rem 0.17rem ;
     background: transparent;
     border-radius: 0.3rem;
+    border: 3px solid white;
     font-weight: 300;
-    color: white;
+    color: gray;
     position: relative;
     cursor: pointer;
-    border: 3px solid white;
     padding: 1rem 1rem 2rem 1rem;
 }
 
