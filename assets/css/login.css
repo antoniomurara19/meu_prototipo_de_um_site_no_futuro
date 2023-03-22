@@ -83,7 +83,94 @@ header h2:hover{
 
 /* ----------------------------main--------------------- */
 
+main{
+    background-color: rgb(211, 189, 189);
+}
 
+h2{
+    font-size: 3rem;
+    padding: 2.2rem;
+    color: white;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+label{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    font-weight: 300;
+    display: block;
+}
+input{
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    font-weight: 300;
+    width: 12rem;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+/* --- fieldset --- */
+
+fieldset{
+    padding: 2rem;
+    margin: 0 0 3rem 0;
+    border-radius: 0.3rem;
+}
+  
+legend{
+    background-color: #f96d00;
+    font-weight: 300;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0.3rem;
+}
+
+/* --- button --- */
+
+.btn{
+    display: block;
+    width: 6rem;
+    height: 3rem;
+    margin: 1rem 0.5rem 0.5rem 0.17rem ;
+    background: transparent;
+    border-radius: 0.3rem;
+    font-weight: 300;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    border: 3px solid white;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.btn::before{
+    content:"";
+    background-color:#f96d00 ;
+    background-size: contain;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 300ms;
+}
+
+.btn:hover::before{
+    width:100%;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
 
   /* ---------------footer---------------------- */
 
